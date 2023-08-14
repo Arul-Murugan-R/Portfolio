@@ -14,6 +14,9 @@
     --primary:#f89900;
     --terinary:#ccc;
 }
+html {
+    scroll-behavior: smooth;
+  }
 body{
     background: var(--secondary);
     font-family: 'Unna';
@@ -49,7 +52,7 @@ body{
 }
 .homeSlide{
     display: flex;
-    margin:20px 300px;
+    justify-content: center;
     color: var(--textcolor);
     gap: 20px;   
 }
@@ -101,6 +104,69 @@ body{
 .homeSlide .profile{
   height: 500px;
 }
+.toggle{
+    display: grid;
+    place-items: center;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--lightText);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: var(--secondary);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color:var(--primary);
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
 
 @keyframes growinout{
   0%{
@@ -166,7 +232,7 @@ body{
     margin-right: 30px;
     padding: 30px 50px;
     display: inline-block;
-    box-shadow: 3px 3px 10px #ccc;
+    box-shadow: 3px 3px 10px var(--lightText);
 }
 
 .about .cards .card .briefly{
@@ -232,4 +298,98 @@ body{
   left: 80px;
   top: 50%;
     position: absolute;
+}
+
+.resume{
+    background: var(--terinary);
+    padding: 20px 40px;
+    color: var(--textcolor);
+    display: grid;
+    gap: 5px;
+}
+
+.resume .titled{
+    letter-spacing: 2px;
+}
+.resume .titled::after{
+    content: "";
+    display: block;
+    width: 80px;
+    height: 1px;
+    background: var(--primary);
+}
+.resume h3.heading{
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--primary);
+}
+
+.eduCards .card{
+    width:350px;
+    display: inline-block;
+    padding: 15px 10px;
+    margin-right: 20px;
+    border: 1px solid rgba(204, 204, 204,0.2);
+}
+
+.eduCards .card .year{
+    color: var(--primary);
+    font-family: "Secular One";
+    font-size: 22px;
+    font-weight: 400;
+    margin: 5px 0px;
+}
+
+.eduCards .card .title{
+    font-size: 18px;
+}
+
+.eduCards .card .place{
+    font-size: 14px;
+    font-style: italic ;
+}
+
+
+.achCards .card{
+    min-width:350px;
+    max-width: 400px;
+    display: inline-block;
+    padding: 15px 10px;
+    margin-right: 20px;
+    border: 1px solid rgba(204, 204, 204,0.2);
+}
+
+.achCards .card .year{
+    color: var(--primary);
+    font-family: "Secular One";
+    font-size: 22px;
+    font-weight: 400;
+    margin: 5px 0px;
+}
+
+.achCards .card .title{
+    font-size: 18px;
+}
+
+.achCards .card .place{
+    font-size: 14px;
+    font-style: italic ;
+}
+
+
+.skillCards .card{
+    min-width:150px;
+    max-width: 200px;
+    display: inline-block;
+    padding: 15px 10px;
+    margin-right: 20px;
+    border: 1px solid rgba(204, 204, 204,0.2);
+    text-align: center;
+}
+
+.skillCards .card .title{
+    color: var(--primary);
+    text-transform: uppercase;
+    font-family: "Secular One";
+    letter-spacing: 2px;
 }

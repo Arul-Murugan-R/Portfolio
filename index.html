@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./style.css">
     
 </head>
-<body>
+<body id="root" >
     <div class="section1">
         <div class="navBar">
             <h2 class="logo">
@@ -21,13 +21,15 @@
                 <li><a href="#">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#">Resume</a></li>
-                <li><a href="#">Project</a></li>
+                <li><a href="#resume">Resume</a></li>
                 <li><a href="#">Contact Me</a></li>
             </ul>
         </div>
-        <div>
-            
+        <div class="toggle">
+            <label class="switch">
+                <input type="checkbox" checked  onclick="switchTheme()" />
+                <span class="slider round"></span>
+              </label>
         </div>
     </div>
     <div class="homeSlide" id="home">
@@ -134,13 +136,13 @@
             </div>
             <div class="card">
                 <div class="pro-img">
-                    <img src="./public/images/project4.png" alt="">
+                    <img src="./public/images/project2.png" alt="">
                 </div> 
                 <div class="title">
                     TODO Application
                 </div> 
                 <div>
-                    <a href="https://cyberquest.vercel.app/" target="_blank" class="highlight more">Learn More</a> 
+                    <a href="#" class="highlight more">Learn More</a> 
                 </div>
             </div>
             <div class="card">
@@ -167,10 +169,137 @@
             </div>
         </div>
     </div>
-
+    <div class="resume" id="resume">
+        <h1 class="titled">Resume</h1>
+        <div class="educate">
+            <h3 class="heading">/// &emsp;EDUCATION & SPECIALIZATION</h3>
+            <div class="eduCards">
+                <div class="card">
+                    <div class="year">
+                        2018 - 2020
+                    </div>
+                    <div class="title">
+                        Computer Science With Maths 
+                    </div>
+                    <div class="place">
+                        Velammal Vidyalaya
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="year">
+                        2020 - Present
+                    </div>
+                    <div class="title">
+                        B.E. Computer Science And Engineering
+                    </div>
+                    <div class="place">
+                        St. Joseph's College
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="achieve">
+            <h3 class="heading">/// &emsp;Achievements</h3>
+            <div class="achCards">
+                <div class="card">
+                    <div class="year">
+                        August 2022
+                    </div>
+                    <div class="title">
+                        Won Smart India Hackathon as a Team
+                    </div>
+                    <div class="place">
+                        GMR Institution Rajam
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="year">
+                        August 2023
+                    </div>
+                    <div class="title">
+                        College Symposium Event Organiser 
+                    </div>
+                    <div class="place">
+                        St. Joseph's College
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="year">
+                        August 2023
+                    </div>
+                    <div class="title">
+                        Completed 3months of Internship as a Web Developer
+                    </div>
+                    <div class="place">
+                        AiViREX Innovative
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="skills">
+            <h3 class="heading">/// &emsp;Skills</h3>
+            <div class="skillCards">
+                <div class="card">
+                    <img src="./public/images/skill1.png" alt="" class="sImg"/>
+                    <div class="title">
+                        html
+                    </div>
+                    <div class="progress">
+                        50%
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./public/images/skill2.png" alt="" class="sImg"/>
+                    <div class="title">
+                        css
+                    </div>
+                    <div class="progress">
+                        50%
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./public/images/skill3.png" alt="" class="sImg" width="50"/>
+                    <div class="title">
+                        javascript
+                    </div>
+                    <div class="progress">
+                        50%
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./public/images/skill4.png" alt="" class="sImg"/>
+                    <div class="title">
+                        Node Js
+                    </div>
+                    <div class="progress">
+                        50%
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./public/images/skill1.png" alt="" class="sImg"/>
+                    <div class="title">
+                        html
+                    </div>
+                    <div class="progress">
+                        50%
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script>
         const fileHandler=(path)=>{
             window.location = "/public/files/"+path
+        }
+        let body = document.getElementById("root")
+        const switchTheme=()=>{
+            let mode = body.classList.contains("light")
+            console.log("works",mode)
+            if(!mode){
+                body.classList.add("light")
+            }else{
+                body.classList.remove("light")
+            }
         }
     </script>
 </body>
