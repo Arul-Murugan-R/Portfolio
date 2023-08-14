@@ -12,7 +12,8 @@
     --textcolor:#181d27;
     --lightText:#010101;
     --primary:#f89900;
-    --terinary:#ccc;
+    --primary:#ff8800;
+    --terinary:whitesmoke;
 }
 html {
     scroll-behavior: smooth;
