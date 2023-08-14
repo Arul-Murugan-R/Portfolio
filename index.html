@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Site</title>
+    <link href='https://fonts.googleapis.com/css?family=Secular One' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Unna' rel='stylesheet'>
+
+    <link rel="stylesheet" href="./style.css">
+    
+</head>
+<body>
+    <div class="section1">
+        <div class="navBar">
+            <h2 class="logo">
+                Arul.R
+            </h2>
+        <div class="menus">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#">Resume</a></li>
+                <li><a href="#">Project</a></li>
+                <li><a href="#">Contact Me</a></li>
+            </ul>
+        </div>
+        <div>
+            
+        </div>
+    </div>
+    <div class="homeSlide" id="home">
+        <div class="left">
+            <div class="hello">
+                Hello
+            </div>
+            <div class="im">
+                I'm <label class="highlight">Arul</label> Murugan R
+            </div>
+            <div class="discription">
+                This is <label class="highlight">Arul Murugan</label> a Student, Web Developer and 
+                learner of new technologies located in Chennai, looking for working around the globe.
+            </div>
+            <div class="cv">
+                <button class="custom-btn" onclick="fileHandler('resume-till-intern.pdf')">Download CV</button>
+            </div>
+        </div>
+        <div class="right">
+            <img src="./public/images/profile2.jpg" alt="" class="profile"/>
+        </div>
+    </div>
+   </div>
+    <div class="about" id="about">
+        <div class="container">
+            <div class="left">
+                <img src="./public/images/profile3.jpg" alt="">
+            </div>
+            <div class="right">
+                <h3 class="highlight head">
+                    Discover
+                </h3>
+                <div class="heading">
+                    About Me
+                </div>
+                <div class="discription" style="width: 450px;">
+                    An energetic and passionate college student with excellent analytics
+                    skills and a fast learner,working towards a Bachelor's degree in
+                    Computer Science at St. Joseph College. I've worked with my student
+                    group and have done a few self-thought projects using python & java,
+                    which is available in my GitHub profile. I look forward to using my
+                    knowledge at my best fulfilling the requirements .
+                    
+                </div>
+                <div class="hire">
+                    <button class="custom-btn" >Hire Me</button>
+                </div>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <div class="icons">
+                    <img src="./public/images/icon2.png" alt="">
+                </div> 
+                <div class="title">
+                    Web Research
+                </div> 
+                <div class="briefly">
+                    4 projects
+                </div>
+            </div>
+            <div class="card">
+                <div class="icons">
+                    <img src="./public/images/icon1.png" alt="">
+                </div> 
+                <div class="title">
+                    Web Development
+                </div> 
+                <div class="briefly">
+                    10 projects
+                </div>
+            </div>
+            <div class="card">
+                <div class="icons">
+                    <img src="./public/images/icon3alt.png" width="100" alt="">
+                </div> 
+                <div class="title">
+                    API Creation
+                </div> 
+                <div class="briefly">
+                    5 projects
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="projects" id="projects">
+        <div class="head">
+            <h2>Featured Projects</h2>
+        <div class="view">
+            <button class="custom-btn">View All</button>
+        </div>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <div class="pro-img">
+                    <img src="./public/images/project1.png" alt="">
+                </div> 
+                <div class="title">
+                    Temple Explorer
+                </div> 
+                <div>
+                    <a href="https://temple-explorer.vercel.app/" target="_blank" class="highlight more">Learn More</a> 
+                </div>
+            </div>
+            <div class="card">
+                <div class="pro-img">
+                    <img src="./public/images/project4.png" alt="">
+                </div> 
+                <div class="title">
+                    TODO Application
+                </div> 
+                <div>
+                    <a href="https://cyberquest.vercel.app/" target="_blank" class="highlight more">Learn More</a> 
+                </div>
+            </div>
+            <div class="card">
+                <div class="pro-img">
+                    <img src="./public/images/project3.png" alt="">
+                </div> 
+                <div class="title">
+                    Blood Bank Management
+                </div> 
+                <div>
+                    <a href="https://blood-bank-management-livid.vercel.app/" target="_blank" class="highlight more">Learn More</a> 
+                </div>
+            </div>
+            <div class="card">
+                <div class="pro-img">
+                    <img src="./public/images/project4.png" alt="">
+                </div> 
+                <div class="title">
+                    Event Organiser Platform
+                </div> 
+                <div>
+                    <a href="https://cyberquest.vercel.app/" target="_blank" class="highlight more">Learn More</a> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const fileHandler=(path)=>{
+            window.location = "/public/files/"+path
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,235 @@
+:root{
+    /* #d89c3b */
+    --primary:#d89c3b;
+    --secondary:#181d27;
+    --lightText:#ccc;
+    --terinary:#1e2030;
+    --textcolor:white;
+}
+
+.light{
+    --secondary:white;
+    --textcolor:#181d27;
+    --lightText:#010101;
+    --primary:#f89900;
+    --terinary:#ccc;
+}
+body{
+    background: var(--secondary);
+    font-family: 'Unna';
+    margin: 0px;
+}
+.section1{
+    height: 99vh;
+}
+.logo{
+    padding: 0px;
+    margin-top:10px;
+}
+.navBar{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 20px ;
+    color: var(--primary);
+    font-family: "Secular One";
+}
+.menus ul{
+    padding: 0px;
+}
+.menus ul li{
+    list-style: none;
+    display: inline;
+    margin-right:20px ;
+    font-size: 16px;
+    cursor:pointer;
+}
+.menus ul li a{
+    text-decoration: none;
+    color: var(--primary);
+}
+.homeSlide{
+    display: flex;
+    margin:20px 300px;
+    color: var(--textcolor);
+    gap: 20px;   
+}
+.homeSlide .hello {
+    text-transform: uppercase;
+    color: var(--primary);
+    position: relative;
+    padding-left: 50px;
+    letter-spacing: 2px;
+}
+.homeSlide .left{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 15px;
+}
+.homeSlide .hello::before {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 1px;
+  background:var(--primary);
+  left: 0;
+  top: 50%;
+  position: absolute;
+}
+.homeSlide .im{
+  font-size: 35px;
+  font-family: "Secular One";
+  letter-spacing: 2px;
+}
+.highlight{
+  color: var(--primary);
+}
+.homeSlide .discription{
+  font-size: 16px;
+  color: var(--lightText);
+  width:400px;
+  line-height: 26px;
+  margin-bottom: 50px;
+}
+.custom-btn{
+  padding: 10px 50px;
+  background: var(--primary);
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.homeSlide .profile{
+  height: 500px;
+}
+
+@keyframes growinout{
+  0%{
+      font-size: 1.2vw;
+  }
+  50%{
+      font-size: 2vw;
+  }
+}
+.about{
+    background: var(--terinary);
+    display: grid;
+    justify-content: center;
+    place-items: center;
+    padding: 40px;
+}
+.about .container{
+  /* padding: 30px 250px; */
+  display: flex;
+  color: var(--textcolor);
+  gap: 50px;
+  width: 800px;
+}
+
+.about .container .highlight{
+    margin:0px;
+}
+.about .container .heading{
+    font-family: "Secular One";
+    letter-spacing: 2px;
+    font-size: 22px;
+    padding-bottom:5px ;
+}
+.about .container .heading::after{
+    content: "";
+    display: block;
+    width: 50px;
+    height: 1px;
+    background: var(--primary);
+
+}
+.about .container .discription{
+    color: var(--lightText) !important;
+}
+
+.about .container img{
+    height: 350px;
+}
+
+.about .container .right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:20px;
+}
+.about .cards{
+    margin-top: 20px;
+}
+.about .cards .card{
+    color:var(--textcolor);
+    text-align: center;
+    background: var(--secondary);
+    margin-right: 30px;
+    padding: 30px 50px;
+    display: inline-block;
+    box-shadow: 3px 3px 10px #ccc;
+}
+
+.about .cards .card .briefly{
+    color:var(--lightText) !important;
+    font-size: 14px;
+}
+.about .discription{
+    line-height: 26px;
+}
+
+.projects{
+    height: 100vh auto;
+    padding: 30px 50px;
+    color: var(--textcolor);
+}
+
+.projects .head{
+    display: flex;
+    justify-content: space-around;
+}
+.projects .view{
+    display: grid;
+    place-items: center;
+}
+
+.projects .cards {
+    display: flex;
+    justify-content: center;
+    gap:20px;
+    flex-wrap: wrap;
+}
+
+.projects .cards .card{
+    width:400px !important;
+    margin-top: 10px;
+}
+.projects .cards .card .title{
+    padding-top: 10px;
+    font-family: "Secular One";
+}
+
+.projects .cards .card .pro-img{
+    padding: 40px 25px;
+    background: #00000043;
+}
+
+.projects .card img{
+    width: 100%;
+    height: 100%;
+}
+
+.projects .more{
+    position: relative;
+    text-decoration: none;
+}
+ 
+.projects .more::after{
+    content: "";
+    display: block;
+  width: 40px;
+  height: 1px;
+  background:var(--primary);
+  left: 80px;
+  top: 50%;
+    position: absolute;
+}
