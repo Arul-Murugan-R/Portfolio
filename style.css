@@ -225,6 +225,9 @@ body{
 }
 .about .cards{
     margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 .about .cards .card{
     color:var(--textcolor);
@@ -233,6 +236,7 @@ body{
     margin-right: 30px;
     padding: 30px 50px;
     display: inline-block;
+    justify-content: center;
     box-shadow: 3px 3px 10px var(--lightText);
 }
 
@@ -393,4 +397,67 @@ body{
     text-transform: uppercase;
     font-family: "Secular One";
     letter-spacing: 2px;
+}
+@media (max-width:938px){
+    .projects{
+        padding: 40px 30px;
+    }
+    .projects .cards .card {
+        width:320px !important;
+    }
+    .projects .cards .card .pro-img{
+        padding: 20px 15px;
+    }
+    .custom-btn{
+        padding: 10px 40px;
+    }
+    .about .container{
+        gap:10px;
+        .right .discription{
+            width: 400px !important;
+        }
+    }
+}
+@media (max-width:780px){
+    .section1{
+        height: auto;
+    }
+    .homeSlide{
+        padding: 20px;
+    }
+    .homeSlide .right{
+        display: none;
+    }
+    .about{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 30px 20px !important;
+    }
+    .about .container{
+        gap:10px;
+        .right .discription{
+            width: auto !important;
+        }
+    }
+    .about .cards .card{
+        margin-top: 20px;
+        width: 100px;
+    }
+    .about .container .left{
+        display: none;
+    }
+    .projects{
+        padding: 30px 10px;
+    }
+    .projects .cards .card {
+        width:250px !important;
+        /* min-width: 300px; */
+    }
+    .custom-btn{
+        padding: 10px 20px;
+    }
+    .resume{
+        padding: 30px 10px;
+    }
 }
