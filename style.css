@@ -25,6 +25,17 @@ body{
     font-family: 'Unna';
     margin: 0px;
 }
+.up{
+    height: 80px;
+    width: 80px;
+    position: fixed;
+    right:30px;
+    bottom: 30px;
+}
+.up img{
+    width: 100%;
+    height: 100%;
+}
 .section1{
     height: 99vh;
 }
@@ -38,6 +49,13 @@ body{
     padding: 5px 20px ;
     color: var(--primary);
     font-family: "Secular One";
+}
+.navBar .ham{
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    display: none;
+    padding-bottom: 10px;
 }
 .menus ul{
     padding: 0px;
@@ -433,7 +451,7 @@ body{
     gap:15px;
 }
 
-.contact .box input{
+.contact .box input,.contact .box textarea{
     height: 40px;
     background: transparent;
     border: 1px solid var(--lightText);
@@ -441,18 +459,14 @@ body{
     border-radius: 5px;
     outline: none;
     width: 400px;
+    color: var(--lightText);
+    font-family: "Secular One";
     transition: all .2s ease-in-out;
 }
 
 .contact .box textarea{
     height: 120px;
-    background: transparent;
-    border: 1px solid var(--lightText);
     padding: 10px 10px;
-    border-radius: 5px;
-    outline: none;
-    width: 400px;
-    transition: all .2s ease-in-out;
 }
 
 .contact .box input:focus,.contact .box textarea:focus{
@@ -576,10 +590,19 @@ body{
     }
     .homeSlide{
         padding: 20px;
+        gap:10px;
+        .profile{
+            height: 300px;
+        }
+        .im{
+            font-size: 25px;
+        }
+        
     }
-    .homeSlide .right{
-        display: none;
-    }
+    .homeSlide .left .discription{
+            width: 300px !important;
+            word-wrap: break-word;
+        }
     .about{
         display: flex;
         justify-content: center;
@@ -612,4 +635,48 @@ body{
     .resume{
         padding: 30px 10px;
     }
+}
+
+@media (max-width:650px){
+    .navBar div{
+        display: none;
+    }
+    .navBar .ham{
+        display: grid;
+    }
+}
+
+@media (max-width:500px){
+    .homeSlide {
+        justify-content: start;
+        .right{
+            display: none;
+        }
+        .left .discription{
+            width:100% !important;
+        }
+    }
+    .about .cards{
+        margin: 0px !important;
+    }
+    .about .card{
+        width: 100% !important;
+        margin: 0px !important;
+        margin-bottom: 10px !important;
+    }
+    .contact{
+        padding: 2px 5px !important;
+        .container{
+            justify-content:center;
+        }
+    }
+    .contact .container .box input,.contact .container .box textarea{
+        min-width:320px !important;
+        width: 100%;
+    }
+    .contact .details{
+        padding: 5px 10px !important;
+        width:100% !important;
+    }
+    
 }

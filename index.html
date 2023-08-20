@@ -9,9 +9,30 @@
     <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
 
     <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/f6369706ad.js" crossorigin="anonymous" defer></script>
     
 </head>
 <body id="root" >
+    <a href="#" class="up"><img src="./public/images/uparrow.png" alt=""/></a>
+    <!-- <ul class="resPhone">
+        <li><a href="#" class="direct">
+            <img src="./public/images/" alt="" class="optImg"/>
+            <i class="fa-solid fa-house"></i>
+            Menu
+        </a></li>
+        <li><a href="#" class="direct">
+            <img src="./public/images/" alt="" class="optImg"/>
+            Menu
+        </a></li>
+        <li><a href="#" class="direct">
+            <img src="./public/images/" alt="" class="optImg"/>
+            Menu
+        </a></li>
+        <li><a href="#" class="direct">
+            <img src="./public/images/" alt="" class="optImg"/>
+            Menu
+        </a></li>
+    </ul> -->
     <div class="section1">
         <div class="navBar">
             <h2 class="logo">
@@ -31,6 +52,9 @@
                 <input type="checkbox" checked  onclick="switchTheme()" />
                 <span class="slider round"></span>
               </label>
+        </div>
+        <div class="ham">
+            <img src="./public/images/hamburger.png" alt="" height="25px"/>
         </div>
     </div>
     <div class="homeSlide" id="home">
@@ -68,10 +92,10 @@
                 </div>
                 <div class="discription" style="width: 450px;">
                     An energetic and passionate college student with excellent analytics
-                    skills and a fast learner,working towards a Bachelor's degree in
+                    skills and a fast learner, working towards a Bachelor's degree in
                     Computer Science at St. Joseph College. I've worked with my student
-                    group and have done a few self-thought projects using python & java,
-                    which is available in my GitHub profile. I look forward to using my
+                    group and have done a few self-thought projects using React & Node JS,
+                    which is available in my GitHub profile. I look forward to use my
                     knowledge at my best fulfilling the requirements .
                     
                 </div>
@@ -294,8 +318,8 @@
             <form class="box" autocomplete="off">
                 <input type="text" name="name" placeholder="NAME"/>
                 <input type="text" name="email" placeholder="EMAIL"/>
-                <textarea placeholder="MESSAGE" id="" cols="30" rows="10"></textarea>
-                <button class="custom-btn ow">SEND</button>
+                <textarea placeholder="MESSAGE" name="msg" cols="30" rows="10"></textarea>
+                <button class="custom-btn ow" >SEND</button>
             </form>
             <div class="details">
                 <div class="detail-list">
@@ -331,7 +355,7 @@
 
     <script>
         const fileHandler=(path)=>{
-            window.location = "/public/files/"+path
+            window.location = window.location+"public/files/"+path
         }
         let body = document.getElementById("root")
         const switchTheme=()=>{
@@ -344,5 +368,5 @@
             }
         }
     </script>
-</body>
+    </body>
 </html>
