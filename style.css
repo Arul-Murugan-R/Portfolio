@@ -334,7 +334,7 @@ body{
 
 .resume{
     background: var(--terinary);
-    padding: 20px 40px;
+    padding: 40px 40px;
     color: var(--textcolor);
     display: grid;
     gap: 5px;
@@ -467,6 +467,8 @@ body{
 .contact .box textarea{
     height: 120px;
     padding: 10px 10px;
+    resize: none;
+    overflow: auto;
 }
 
 .contact .box input:focus,.contact .box textarea:focus{
@@ -665,18 +667,28 @@ body{
         margin-bottom: 10px !important;
     }
     .contact{
-        padding: 2px 5px !important;
+        padding: 0px !important;
         .container{
             justify-content:center;
         }
+    }
+    .contact .container{
+        justify-content:center;
+        padding: 0px !important;
     }
     .contact .container .box input,.contact .container .box textarea{
         min-width:320px !important;
         width: 100%;
     }
     .contact .details{
-        padding: 5px 10px !important;
+        padding: 0px !important;
         width:100% !important;
+    }
+    .eduCards .card{
+        max-width: 300px;
+    }
+    .achCards .card{
+        width: 300px !important;
     }
     
 }
