@@ -300,6 +300,7 @@ body{
 .projects .cards .card{
     width:400px !important;
     margin-top: 10px;
+    position: relative;
 }
 .projects .cards .card .title{
     padding-top: 10px;
@@ -330,6 +331,21 @@ body{
   left: 80px;
   top: 50%;
     position: absolute;
+}
+
+.projects .git-icon{
+    height: 30px !important;
+    width: 30px !important;
+    border-radius:50% ;
+    position: absolute;
+    right:10px;
+    top:10px;
+    transform: scale(1);
+    transition: all 0.4s ease-in-out;
+}
+
+.projects .git-icon:hover{
+    transform: scale(1.5);
 }
 
 .resume{
