@@ -303,11 +303,16 @@ body{
     position: relative;
 }
 .projects .cards .card .title{
-    padding-top: 10px;
+    padding-top: 10px !important;
     font-family: "Secular One";
+    text-decoration: none;
+    color: var(--textcolor);
+    font-size: large;
 }
 
 .projects .cards .card .pro-img{
+    height: 170px;
+    width: 350px;
     padding: 40px 25px;
     background: #00000043;
 }
@@ -586,12 +591,6 @@ body{
     .projects{
         padding: 40px 4px;
     }
-    .projects .cards .card {
-        width:320px !important;
-    }
-    .projects .cards .card .pro-img{
-        padding: 20px 15px;
-    }
     .custom-btn{
         padding: 10px 40px;
     }
@@ -639,13 +638,6 @@ body{
     }
     .about .container .left{
         display: none;
-    }
-    .projects{
-        padding: 30px 10px;
-    }
-    .projects .cards .card {
-        width:250px !important;
-        /* min-width: 300px; */
     }
     .custom-btn{
         padding: 10px 20px;
@@ -705,6 +697,10 @@ body{
     }
     .achCards .card{
         width: 300px !important;
+    }
+    .projects .pro-img{
+        width: 250px;
+        height: 100px;
     }
     
 }
